@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmed Samir Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+   
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <img src="photo5/Picsart_25-09-15_01-08-29-186.jpg" alt="">
+      </div>
+      <nav class="list1" id="menu"   >
+        <ul >
+          <li><a href="#h">Home</a></li>
+          <li><a href="#a">About</a></li>
+          <li><a href="#s">Skills</a></li>
+          <li><a href="#p">Projects</a></li>
+          <li><a href="#c">Contact</a></li>
+        </ul>
+      </nav>
+     
+     <button onclick="toggleMenu()">☰</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="h" class="page1">
+      <div class="me">
+        <div class="profile">
+          <h1>Ahmed Samir</h1>
+          <h3>Front-end Developer</h3>
+          <p>
+            I build modern, responsive, and user-friendly websites that
+            provide an excellent experience across devices.
+          </p>
+          <a class="btn-3d" href="#p">View My Work</a>
+        </div>
+        <img src="photo5/٢٠٢٥٠٩٢٥_١٤٠٠٠٨.jpg" alt="Ahmed Samir Photo" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="a" class="page2">
+      <h1>About Me</h1>
+      <div class="about-content">
+        <p>
+          Hi! I'm Ahmed Samir from Qalyubia, Egypt. I'm 18 years old and
+          passionate about front-end development. I create websites that are
+          both functional and visually appealing.
+        </p>
+        <p>
+          My journey started with curiosity about how websites work, which
+          turned into a passion for coding. I continuously learn modern
+          practices to improve my skills.
+        </p>
+        <p>
+          Explore my portfolio to see my latest work! Let's connect if you
+          have an exciting project or opportunity.
+        </p>
+        <a href="#c" class="btn-about">My Media</a>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="s" class="page3">
+      <h1>Skills</h1>
+      <ul class="skills-list">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Bootstrap</li>
+        <li>React</li>
+        <li>PHP</li>
+        <li>MySQL</li>
+        <li>APIs</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="p" class="page4">
+      <h1>Projects</h1>
+      <div class="projects-grid">
+        <div class="project-card">
+    <a target="_blank" href="https://ahmed-adidas.netlify.app"><img src="photo5/WhatsApp Image copy.jpeg" alt="project"></a>
+    <div class="project-info">
+      <h3>Adidis website</h3>
+      <p>Modern responsive website built using HTML and CSS .</p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <a target="_blank" href="https://ahmed-responsive1-fa7142.netlify.app"><img src="photo5/WhatsApp Image 2026-03-10 at 8.47.21 PM.jpeg" alt="project"></a>
+    <div class="project-info">
+      <h3>Login Responsive</h3>
+      <p>Responsive login page that adapts smoothly to all screen sizes with a clean and modern design.</p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <a target="_blank" href="https://unique-khapse-a6a6e9.netlify.app"><img src="photo5/WhatsApp Image 2026-03-10 at 9.02.33 PM.jpeg" alt="project"></a>
+    <div class="project-info">
+      <h3>Under Construction</h3>
+      <p>Modern responsive portfolio showcasing projects with a clean layout and smooth user experience.</p>
+    </div>
+  </div></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="c" class="page5">
+      <h1>Contact</h1>
+       <div class="all2">
+    <div class="link">
+        <div class="link1">
+        <a target="_blank" href="https://www.facebook.com/share/1B5Tey2fz9/"><i id="face" class="fab fa-facebook"></i></a>
+        <a target="_blank" href="https://wa.me/qr/4PLZBZH354FFD1"><i id="what" class="fab fa-whatsapp"></i></a>
+        <a target="_blank" href="https://www.instagram.com/as5207123?igsh=MWV0aXIzMmk3bmJnbA=="><i id="ins" class="fab fa-instagram"></i></a></div>
+        <div class="link2">
+        <a target="_blank" href="https://www.linkedin.com/in/ahmed-samir-3544a3329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i id="link" class="fab fa-linkedin"></i></a>
+        <a target="_blank" href="https://t.me/+201222638171"><i id="tel" class="fab fa-telegram"></i></a>
+    </div>
+</div>
+    
+ </div>
+    </section>
+
+
+  <script>
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+
+document.addEventListener("click", function(e) {
+  const menu = document.getElementById("menu");
+  const button = document.querySelector(".header button");
+
+  if (!menu.contains(e.target) && !button.contains(e.target)) {
+    menu.style.display = "none";
+  }
+});
+</script>
+  </body>
+</html>
+
